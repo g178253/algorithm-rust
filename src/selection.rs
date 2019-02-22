@@ -1,3 +1,5 @@
+use algorithm::common;
+
 pub fn sort(a: &mut Vec<i32>) {
     if a.len() < 2 { return; }
 
@@ -8,12 +10,6 @@ pub fn sort(a: &mut Vec<i32>) {
                 min = j;
             }
         }
-        swap(a, min, i);
+        common::swap(a, min, i);
     }
-}
-
-fn swap(a: &mut Vec<i32>, left: usize, right: usize) {
-    let temp = a[left];
-    a[left] = a[right];
-    a[right] = temp;
 }
