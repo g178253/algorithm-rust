@@ -1,5 +1,5 @@
-mod selection;
-mod insertion;
+mod sort;
+use sort::insertion;
 
 fn main() {
     let mut list = vec![8,7,6,5,4,3,2,1];

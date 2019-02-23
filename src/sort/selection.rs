@@ -1,4 +1,4 @@
-use algorithm::common;
+use crate::sort::common;
 
 pub fn sort(a: &mut Vec<i32>) {
     if a.len() < 2 { return; }
