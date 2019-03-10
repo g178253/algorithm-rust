@@ -1,9 +1,9 @@
 mod sort;
-use sort::merge;
+use sort::quick;
 
 fn main() {
-    let mut list = vec![8,7,6,5,4,3,2,1];
+    let mut list = vec![8,9,6,12,4,13,2,31];
     println!("排序前：{:?}", list);
-    merge::sort(&mut list);
+    quick::sort(&mut list, 0, 7);
     println!("排序后：{:?}", list);
 }

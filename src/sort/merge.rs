@@ -1,5 +1,3 @@
-use crate::sort::common;
-
 pub fn sort(a: &mut Vec<i32>) {
     let n = a.len();
     if n < 2 { return; }
